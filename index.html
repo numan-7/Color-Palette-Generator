@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Color Palette Generator</title>
+        <link rel="icon" type="image/x-icon" href="color-palette.svg">
+    </head>
+    <body>
+        <form id ="colorForm">
+            <input type ="color" id ="colorPicker">
+            <select id ="colorTypes">
+                <option value ="monochrome">monochrome</option>
+                <option value ="monochrome-dark">monochrome-dark</option>
+                <option value ="monochrome-light">monochrome-light</option>
+                <option value ="analogic">analogic</option>
+                <option value ="complement">complement</option>
+                <option value ="analogic-complement">analogic-complement</option>
+                <option value ="triad">triad</option>
+            </select>
+            <button>get color scheme</button>
+        </form>
+        <div id = "colors" class = "colors">
+            <div id = "color1" class = "click color1"></div>
+            <div id = "color1a" class = "color1a">#000000</div>
+            <div id = "color2" class = "click color2"></div>
+            <div id = "color2a" class = "color2a">#1A1919</div>
+            <div id = "color3" class = "click color3"></div>
+            <div id = "color3a" class = "color3a">#343232</div>
+            <div id = "color4" class = "click color4"></div>
+            <div id = "color4a" class = "color4a">#4F4A4A</div>
+            <div id = "color5" class = "click color5"></div>
+            <div id = "color5a" class = "color5a">#6A6262</div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

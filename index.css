@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    caret-color: transparent;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Global Stuff */
+
+#colorPicker, #colorTypes, form button, .color1, .color2, .color3, .color4, .color5{
+    cursor: pointer;
+}
+
+.color1:hover, .color2:hover, .color3:hover, .color4:hover, .color5:hover{
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 15px 10px #F7F0F5;
+    transform: translateY(-5px);   
+}
+
+#colorPicker:hover, form button:hover, #colorTypes:hover{
+    transition: all 0.3s ease 0s;
+    background: #F7F0F5;
+}
+
+/* Header */
+
+#colorForm{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.4375rem;
+    padding-bottom: 1.5625rem;
+}
+
+#colorPicker{
+    border: none;
+    background: #F5F7FA;
+    width: 3.8125rem;
+    height: 2.625rem;
+}
+
+#colorTypes{
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #374151;
+    font-size: 1rem;
+}
+
+form button{
+    background: #FFFFFF;
+    /* font-size: 0.75rem; */
+    font-weight: 500;
+    color: #374151;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Color Grid */
+
+.colors{
+    display: grid;
+    transition: all 0.3s ease 0s;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 85vh 1fr;
+    grid-template-areas:
+    "1 2 3 4 5"
+    "a b c d e";
+}
+
+.color1{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: #000000;
+    grid-area: "1";
+}
+.color2{
+    background: #1a1919;
+    grid-area: "2";
+}
+.color3{
+    background: #343232;
+    grid-area: "3";
+}
+.color4{
+    background: #4f4a4a;
+    grid-area: "4";
+}
+.color5{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #6a6262;
+    grid-area: "5";
+}
+.color1a{grid-area: a;}
+.color2a{grid-area: b;}
+.color3a{grid-area: c;}
+.color4a{grid-area: d;}
+.color5a{grid-area: e;}
+
+.color1a,.color2a,.color3a,.color4a,.color5a{
+    text-align: center; 
+    font-size: 1.25rem;
+    color: #2B283A;
+    padding-top: 11px; 
+    padding-bottom: 11px;
+}
+
+/* Mobile */
+
+@media (max-width: 728px) {
+    #colorForm{
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        justify-content: center;
+    }
+    .colors{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .color1, .color2, .color3, .color4, .color5{
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+        margin: 1rem 0 1rem 0;
+        height: 9rem;
+        width: 17rem;
+    }
+    .color1a,.color2a,.color3a,.color4a,.color5a{
+        margin-bottom: 0.2rem;
+        border-bottom: 1px solid gray;
+        text-align: center; 
+        font-size: 1.25rem;
+        color: #2B283A;
+        padding-top: 11px; 
+        padding-bottom: 11px;
+    }
+    form button {
+        font-size: 0.75rem;
+    }
+}
