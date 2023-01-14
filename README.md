@@ -1,6 +1,6 @@
 # Color-Palette-Generator
-A color palette generator using <a href = "">Color API!</a>
+A mobile and desktop responsive Color Palette Generator using <a href = "https://www.thecolorapi.com/">Color API!</a>
 
 ### Built With 
 
-[![Next][Next.js]][Next-url]
+* HTML, CSS, JS
