@@ -1,2 +1,6 @@
 # Color-Palette-Generator
-a color palette generator using color api!
+A color palette generator using <a href = "">Color API!</a>
+
+### Built With 
+
+[![Next][Next.js]][Next-url]
